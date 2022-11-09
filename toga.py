@@ -179,7 +179,7 @@ class Toga:
         # filter bed file
         bed_filt_rejected_file = "BED_FILTER_REJECTED.txt"
         bed_filt_rejected = os.path.join(self.rejected_dir, bed_filt_rejected_file)
-        # keeping UTRs!
+        # keeping UTRs! 
         prepare_bed_file(
             args.bed_input,
             self.ref_bed,
@@ -1977,6 +1977,7 @@ def parse_args():
         "tDB", default=None, help="Reference genome sequence in 2bit format."
     )
     app.add_argument("qDB", default=None, help="Query genome sequence in 2bit format.")
+    
     # global ops
     app.add_argument(
         "--project_dir",
